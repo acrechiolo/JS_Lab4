@@ -1,0 +1,21 @@
+.coin-div{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: silver;
+    border: 3px solid gray;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .fa-lightbulb {
+   color: grey;
+   font-size: 100px;
+    border-radius: 50px;
+  }
+  .yellow {
+    color: yellow;
+  }

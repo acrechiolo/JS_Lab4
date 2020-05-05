@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lab 4</title>
+    <script src="https://kit.fontawesome.com/98163e216d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="vending-machine">
+        <!-- VENDING MACHINE -->
+        <h1 class="amount-due">Total: $0.00</h1>
+        <button class="button lime-cola" data-amount="2.00">Lime Cola <br> $2.00 </button>
+        <button class="button salted-peanuts" data-amount="3.00">Salted Peanuts <br> $3.00</button>
+        <button class="button chocolate-bar" data-amount="4.00">Chocolate Bar <br> $4.00</button>
+        <button class="button fruit-gummies" data-amount="6.00">Fruit Gummies <br> $6.00</button>
+    </section>
+
+    <!-- MAKE MONEY -->
+    <section>
+        <h2>Make Money</h2>
+        <form class="money-form">
+            <label for="amount"> How Many?</label>
+            <input type="text" name="amount" />
+            <label for="coin">Which Coin?</label>
+            <select name="coin" id="coin">
+                <option value="penny">Penny</option>
+                <option value="nickel">Nickel</option>
+                <option value="dime">Dime</option>
+                <option value="quarter">Quarter</option>
+            </select>
+            <button>Makey Money!</button>
+            <div class="coin-purse">
+
+            </div>
+
+        </form>
+    </section>
+    <!-- LIGHT BULB -->
+    <section class="bulb-buttons">
+        <!-- <div class="light-bulb"></div> -->
+        <i class="far fa-lightbulb"></i>
+        <button class="on">On</button>
+        <button class="off">Off</button>
+        <button class="toggle">Toggle</button>
+        <button class="end">End</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
