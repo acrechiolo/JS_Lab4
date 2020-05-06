@@ -56,19 +56,17 @@ let lightBulb = document.querySelector(".fa-lightbulb");
 let bulbButtons = document.querySelector(".bulb-buttons");
 bulbButtons.addEventListener("click", (e) => {
     if (e.target.classList.contains("on")) {
-        lightBulb.style.color = "yellow";
+        lightBulb.classList.add("light-on");
     } else if (e.target.classList.contains("off")) {
-        lightBulb.style.color = "grey";
+        lightBulb.classList.remove("light-on");
     } else if (e.target.classList.contains("toggle")) {
-        // lightBulb.classList.toggle("light-on");
-        if (lightBulb.style.color === "grey") {
-            lightBulb.style.color = "yellow";
-        } else {
-            lightBulb.style.color = "grey";
-        }
+        lightBulb.classList.toggle("light-on");
     } else if (e.target.classList.contains("end")) {
-        lightBulb.remove();
-        bulbButtons.disabled = true;
+        lightBulb.remove()
+        let buttons = document.querySelectorAll(".bulb");
+        buttons.forEach((button) => {
+            button.disabled = true;
+        })
     }
 });
 

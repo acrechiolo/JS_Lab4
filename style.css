@@ -51,3 +51,7 @@ width: 100px;
   .light-off {
       color: grey;
   }
+
+  .bulb {
+      background-color: aquamarine;
+  }
