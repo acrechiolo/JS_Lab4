@@ -1,3 +1,31 @@
+/* resets */
+.body, section, main {
+    margin: 0;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+
+}
+.vending-machine, .make-money, .bulb-buttons {
+    text-align: center;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.button {
+height: 50px;
+width: 100px;
+}
+
+.money-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .coin-div{
     display: inline-block;
     width: 80px;
@@ -10,12 +38,16 @@
     margin-right: 4px;
     margin-bottom: 4px;
   }
-  
-  .fa-lightbulb {
+
+  .far{
    color: grey;
    font-size: 100px;
     border-radius: 50px;
   }
-  .yellow {
+  .light-on{
     color: yellow;
+  }
+
+  .light-off {
+      color: grey;
   }

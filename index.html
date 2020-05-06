@@ -10,45 +10,48 @@
 </head>
 
 <body>
-    <section class="vending-machine">
-        <!-- VENDING MACHINE -->
-        <h1 class="amount-due">Total: $0.00</h1>
-        <button class="button lime-cola" data-amount="2.00">Lime Cola <br> $2.00 </button>
-        <button class="button salted-peanuts" data-amount="3.00">Salted Peanuts <br> $3.00</button>
-        <button class="button chocolate-bar" data-amount="4.00">Chocolate Bar <br> $4.00</button>
-        <button class="button fruit-gummies" data-amount="6.00">Fruit Gummies <br> $6.00</button>
-    </section>
+    <main>
+        <section class="vending-machine">
+            <!-- VENDING MACHINE -->
+            <p class="amount-due">Total: $0.00</p>
+            <button class="button lime-cola" data-amount="2.00">Lime Cola <br> $2.00 </button>
+            <button class="button salted-peanuts" data-amount="3.00">Salted Peanuts <br> $3.00</button>
+            <button class="button chocolate-bar" data-amount="4.00">Chocolate Bar <br> $4.00</button>
+            <button class="button fruit-gummies" data-amount="6.00">Fruit Gummies <br> $6.00</button>
+        </section>
 
-    <!-- MAKE MONEY -->
-    <section>
-        <h2>Make Money</h2>
-        <form class="money-form">
-            <label for="amount"> How Many?</label>
-            <input type="text" name="amount" />
-            <label for="coin">Which Coin?</label>
-            <select name="coin" id="coin">
-                <option value="penny">Penny</option>
-                <option value="nickel">Nickel</option>
-                <option value="dime">Dime</option>
-                <option value="quarter">Quarter</option>
-            </select>
-            <button>Makey Money!</button>
-            <div class="coin-purse">
+        <!-- MAKE MONEY -->
+        <section class="make-money">
+            <h2>Make Money</h2>
+            <form class="money-form">
+                <label for="amount"> How Many?</label>
+                <input type="text" name="amount" />
+                <label for="coin">Which Coin?</label>
+                <select name="coin" id="coin">
+                    <option value="penny">Penny</option>
+                    <option value="nickel">Nickel</option>
+                    <option value="dime">Dime</option>
+                    <option value="quarter">Quarter</option>
+                </select>
+                <button>Makey Money!</button>
+                <div class="coin-purse">
 
-            </div>
+                </div>
 
-        </form>
-    </section>
-    <!-- LIGHT BULB -->
-    <section class="bulb-buttons">
-        <!-- <div class="light-bulb"></div> -->
-        <i class="far fa-lightbulb"></i>
-        <button class="on">On</button>
-        <button class="off">Off</button>
-        <button class="toggle">Toggle</button>
-        <button class="end">End</button>
-    </section>
-    <script src="./script.js"></script>
+            </form>
+        </section>
+
+        <!-- LIGHT BULB -->
+        <section class="bulb-buttons">
+            <!-- <div class="light-bulb"></div> -->
+            <i class="far fa-lightbulb"></i>
+            <button class="on">On</button>
+            <button class="off">Off</button>
+            <button class="toggle">Toggle</button>
+            <button class="end">End</button>
+        </section>
+        <script src="./script.js"></script>
+    </main>
 </body>
 
 </html>

@@ -51,6 +51,7 @@ coinPurse.addEventListener("click", (event) => {
 })
 
 // LIGHT BULB
+//need to mess around with toggle more, couldn't get it to work properly
 let lightBulb = document.querySelector(".fa-lightbulb");
 let bulbButtons = document.querySelector(".bulb-buttons");
 bulbButtons.addEventListener("click", (e) => {
@@ -59,14 +60,15 @@ bulbButtons.addEventListener("click", (e) => {
     } else if (e.target.classList.contains("off")) {
         lightBulb.style.color = "grey";
     } else if (e.target.classList.contains("toggle")) {
-        lightBulb.classList.toggle("yellow");
-        // if (lightBulb.style.color === "grey") {
-        //     lightBulb.style.color = "yellow";
-        // } else {
-        //     lightBulb.style.color = "grey";
-        // }
+        lightBulb.classList.toggle("light-on");
+        if (lightBulb.style.color === "grey") {
+            lightBulb.style.color = "yellow";
+        } else {
+            lightBulb.style.color = "grey";
+        }
     } else if (e.target.classList.contains("end")) {
-        bulbButtons.remove();
+        lightBulb.remove();
+        bulbButtons.disabled = true;
     }
 });
 
