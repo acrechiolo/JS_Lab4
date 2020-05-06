@@ -60,7 +60,7 @@ bulbButtons.addEventListener("click", (e) => {
     } else if (e.target.classList.contains("off")) {
         lightBulb.style.color = "grey";
     } else if (e.target.classList.contains("toggle")) {
-        lightBulb.classList.toggle("light-on");
+        // lightBulb.classList.toggle("light-on");
         if (lightBulb.style.color === "grey") {
             lightBulb.style.color = "yellow";
         } else {
